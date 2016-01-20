@@ -25,7 +25,9 @@ $(function() {
 });
 
 $(function() {
-  $("#timepicker").timepicker();
+  $("#timepicker").timepicker({ 
+    'timeFormat': 'h:i A'
+  });
 })
 
 // $(function() {
