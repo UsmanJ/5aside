@@ -1,9 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p  Add a match
+  h1 5 A Side
+  h2  Add a match
 
   p
-  | Date:
-  input#inputdate(type='text')
+    | Date:
+    input#datepicker(type='text')
+    | Time:
+    input#timepicker(type='text')

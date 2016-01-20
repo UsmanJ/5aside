@@ -6,15 +6,27 @@
 //   picker.methodName(argument1, argument2, ...)
 //   picker.objectName
 
-//   $('.datepicker').pickadate({
-//     today: '',
-//     clear: 'Clear selection',
-//     close: 'Cancel'
-//   })
+  // $('#inputdate').pickadate({
+  //   today: '',
+  //   clear: 'Clear selection',
+  //   close: 'Cancel'
+  // })
+
+// $(document).ready(function(){
+//   $("input").click(function(){
+//     $("#inputdate").pickadate();
+//   });
 // });
 
-$(document).ready(function(){
-  $("input").click(function(){
-    $("#inputdate").pickadate();
+$(function() {
+  $( "#datepicker" ).datepicker();
+});
+
+$(function() {
+  $('#timepicker').pickatime({
+    clear: ''
   });
 });
+
+
+// $('#inputdate').pickadate();

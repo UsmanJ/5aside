@@ -1,16 +1,17 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    title 5 A Side
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css')
+    script(src='//code.jquery.com/jquery-1.10.2.js')
+    script(src='//code.jquery.com/ui/1.11.4/jquery-ui.js')
 
-    script(scr='bower_components/pickadate/lib/picker.js')
-    script(scr='bower_components/pickadates/lib/picker.date.js')
-    script(scr='javascripts/app.js')
-    script(scr='javascripts/controller.js')
-    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
-    script(src='/bower_components/jquery/dist/jquery.js')
-    script(src='bower_components/angular/angular.js')
-    script(src='bower_components/angular-resource/angular-resource.js')
+  body
+
+    block content
+  script(src='bower_components/pickadate/picker.js')
+  script(src='bower_components/pickadate/picker.time.js')
+  script(type='text/javascript', src='/javascripts/controller.js')
+  script(type='text/javascript', src='/javascripts/app.js')
