@@ -19,14 +19,20 @@
 // });
 
 $(function() {
-  $( "#datepicker" ).datepicker();
+  $( "#datepicker" ).datepicker({
+    dateFormat: "dd/mm/yy"
+  });
 });
 
 $(function() {
-  $('#timepicker').pickatime({
-    clear: ''
-  });
-});
+  $("#timepicker").timepicker();
+})
+
+// $(function() {
+//   $('#timepicker').timepicker({
+//     clear: ''
+//   });
+// });
 
 
 // $('#inputdate').pickadate();
