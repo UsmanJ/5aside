@@ -3,10 +3,13 @@ extends layout
 block content
   h1 5 A Side
   h2  Add a match
+  div
+    p
+      | Date:
+      input#datepicker(type='text')
+      | Time:
+      input#timepicker(type='text')
+      button Add match
 
-  p
-    | Date:
-    input#datepicker(type='text')
-    | Time:
-    input#timepicker(type='text')
-    button Add match
+  h2 Fixtures
+    
